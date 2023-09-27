@@ -4,7 +4,7 @@ import {Route} from 'react-router-dom';
 import Header from "./common/Header";
 import Footer from "./common/Footer";
 import Main from './components/Main';
-import Community from './components/Community';
+import Sol from './components/Sol';
 import Department from './components/Department';
 import Join from './components/Join';
 import Youtube from './components/Youtube';
@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <Header></Header>
       <Route exact path="/" component={Main}></Route>
-      <Route exact path="/community" component={Community}></Route>
+      <Route exact path="/sol" component={Sol}></Route>
       <Route exact path="/department" component={Department}></Route>
       <Route exact path="/coffee" component={Coffee}></Route>
       <Route exact path="/join" component={Join}></Route>

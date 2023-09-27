@@ -6,7 +6,7 @@ function Header() {
     return(
         <header>
             <ul className="gnb">
-                <li><NavLink exact activeStlye={clickStyle} to="/Community">Community</NavLink></li>
+                <li><NavLink exact activeStlye={clickStyle} to="/Sol">Sol</NavLink></li>
                 <li><NavLink exact activeStlye={clickStyle} to="/Department">Department</NavLink></li>
                 <li><NavLink exact activeStlye={clickStyle} to="/Youtube">Youtube</NavLink></li>
                 <li><NavLink exact activeStlye={clickStyle} to="/Coffee">Coffee</NavLink></li>
