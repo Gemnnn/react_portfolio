@@ -9,8 +9,8 @@ function Footer() {
                     <p>Junior Software Developer</p>
                     <div className="sns">
                         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i className="fab fa-connectdevelop"></i></a>
-                        <a href="#"><i className="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
                     </div>
                 </li>
                 <li className="nav">
