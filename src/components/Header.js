@@ -14,7 +14,8 @@ function Header() {
                     <li><NavLink exact activeStlye={clickStyle} to="/Skills">Skills</NavLink></li>
                     {/* <li><NavLink exact activeStlye={clickStyle} to="/Youtube">Youtube</NavLink></li> */}
                     {/* <li><NavLink exact activeStlye={clickStyle} to="/MyMap">MyMap</NavLink></li> */}
-                    <li><NavLink exact activeStlye={clickStyle} to="/Cv">CV</NavLink></li>
+                    {/* <li><NavLink exact activeStlye={clickStyle} to="/Cv">CV</NavLink></li> */}
+                    <li><NavLink onClick={() => window.open('/react_portfolio/BrandenMin.pdf', '_black')} to="/Cv">CV</NavLink></li>
                 </ul>
                 <NavLink className="contact" exact activeStlye={clickStyle} to='/Contact'>Contact</NavLink>
             </div>
