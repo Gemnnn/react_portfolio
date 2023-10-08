@@ -8,8 +8,8 @@ function Footer() {
                     <h1 className="logo"><NavLink exact to="/">Branden Min</NavLink><span>.</span></h1>
                     <p>Junior Software Developer</p>
                     <div className="sns">
-                        <a href="https://www.linkedin.com/in/brandenmin/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/Gemnnn"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/brandenmin/" target='_black'><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Gemnnn" target='_black'><i class="fa-brands fa-github"></i></a>
                         <a href="#"><i class="fa-brands fa-facebook"></i></a>
                     </div>
                 </li>
