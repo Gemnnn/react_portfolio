@@ -1,29 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-body.isScroll {
-  overflow: hidden;
-}
-
 header {
   position: relative;
   width: 100%;
-  background: #f6f8f6;
   z-index: 1;
 }
+
 header::before {
   content: "";
   display: block;
@@ -34,6 +14,7 @@ header::before {
   height: 0;
   background: linear-gradient(270deg, transparent, #cddc39, transparent);
 }
+
 header::after {
   content: "";
   display: block;
@@ -44,9 +25,21 @@ header::after {
   height: 0;
   background: linear-gradient(270deg, transparent, #4caf50, transparent);
 }
+
+header.li::after {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: -8px;
+}
+
 header.sub .inner {
   padding: 20px;
 }
+
 header .inner {
   display: flex;
   width: 1328px;
@@ -54,19 +47,23 @@ header .inner {
   padding: 40px 0;
   align-items: center;
 }
+
 header .logo {
   width: 31%;
   font-size: 37px;
 }
+
 header .logo span {
   color: #4a6869;
 }
+
 header .gnb {
   position: relative;
   width: 46%;
   display: flex;
   justify-content: space-between;
 }
+
 header .gnb .line {
   position: absolute;
   left: 0;
@@ -77,23 +74,42 @@ header .gnb .line {
   transition: all 0.5s;
   transition-timing-function: cubic-bezier(ease-in-out);
 }
+
 header .gnb .line.on {
   height: 5px;
 }
+
 header .gnb li {
   position: relative;
   font-size: 19px;
   color: #4a6869;
   font-weight: 500;
-  overflow: hidden;
   transition: all 0.5s;
 }
+
 header .gnb li a {
   transition: all 0.5s;
 }
+
 header .gnb li a:hover {
   color: rgb(43, 174, 41);
 }
+
+header .gnb li::after {
+  content: "";
+  position: absolute;
+  background-color: #FFFFFF;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -8px;
+  transition: all 0.5s ease;
+}
+
+header .gnb li:hover::after {
+  width: 100%;
+}
+
 header .contact {
   position: relative;
   display: flex;
@@ -110,6 +126,7 @@ header .contact {
   color: #4a6869;
   transition: all 0.5s;
 }
+
 header .contact span {
   opacity: 0;
   color: inherit;
@@ -117,6 +134,7 @@ header .contact span {
   transition: transform 0.3s, opacity 0.3s;
   transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
 }
+
 header .contact::before {
   content: attr(data-text);
   position: absolute;
@@ -128,32 +146,41 @@ header .contact::before {
   transition: transform 0.3s, opacity 0.3s;
   transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
 }
+
 header .contact:hover {
   border: solid 1px #4a6869;
 }
+
 header .contact:hover::before {
   opacity: 0;
   transform: translate3d(0, 100%, 0);
 }
+
 header .contact:hover span {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
+
 header .contact:hover span:nth-child(1) {
   transition-delay: 0.045s;
 }
+
 header .contact:hover span:nth-child(2) {
   transition-delay: 0.105s;
 }
+
 header .contact:hover span:nth-child(3) {
   transition-delay: 0.165s;
 }
+
 header .contact:hover span:nth-child(4) {
   transition-delay: 0.225s;
 }
+
 header .contact:hover span:nth-child(5) {
   transition-delay: 0.285s;
 }
+
 header .totalMenuBtn {
   display: none;
   border: none;
@@ -165,6 +192,7 @@ header .totalMenuBtn {
   cursor: pointer;
   transition: all 0.5s;
 }
+
 header .totalMenuBtn::before {
   content: "";
   display: block;
@@ -176,6 +204,7 @@ header .totalMenuBtn::before {
   transform-origin: left;
   transition: all 0.5s;
 }
+
 header .totalMenuBtn::after {
   content: "";
   display: block;
@@ -187,16 +216,19 @@ header .totalMenuBtn::after {
   transform-origin: left;
   transition: all 0.5s;
 }
+
 header .totalMenuBtn.on {
   width: 30px;
   height: 30px;
   border: none;
 }
+
 header .totalMenuBtn.on::before {
   width: 140%;
   transform: rotateZ(45deg);
   background: #fff;
 }
+
 header .totalMenuBtn.on::after {
   width: 140%;
   top: calc(100% - 1px);
@@ -204,94 +236,47 @@ header .totalMenuBtn.on::after {
   background: #fff;
 }
 
-@keyframes mobileLeftBg {
-  0% {
-    height: 100vh;
-    left: -100%;
-  }
-  100% {
-    height: 100vh;
-    left: 100%;
-  }
-}
-@keyframes mobileRightBg {
-  0% {
-    height: 100vh;
-    right: -100%;
-  }
-  100% {
-    height: 100vh;
-    right: 200%;
-  }
-}
-@keyframes mobileMainBg {
-  0% {
-    opacity: 0;
-    left: 50%;
-    width: 0;
-    filter: blur(28px);
-    transform: translateX(-50%) scale(1.7);
-  }
-  50% {
-    filter: blur(28px);
-    transform: translateX(-50%) scale(1.7);
-  }
-  99% {
-    filter: blur(0px);
-    transform: translateX(-50%) scale(1.7);
-  }
-  100% {
-    opacity: 1;
-    left: 50%;
-    filter: blur(0px);
-    transform: translateX(-50%) scale(1);
-    width: 100%;
-  }
-}
-@keyframes menuFadeIn {
-  0% {
-    opacity: 0;
-    transform: translateX(120px);
-  }
-  100% {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-}
 footer {
   width: 100%;
   padding: 126px 0;
   border-top: solid 1px #4a6869;
   touch-action: none;
 }
+
 footer .inner {
   display: flex;
   flex-wrap: wrap;
   width: 1200px;
   margin: 0 auto;
 }
+
 footer .info {
   width: 21%;
   margin-right: 20%;
 }
+
 footer .info .logo {
   margin-bottom: 14px;
   font-size: 40px;
   line-height: 1;
   font-weight: 700;
 }
+
 footer .info .logo span {
   color: #4a6869;
 }
+
 footer .info p {
   margin-bottom: 39px;
   font-size: 18px;
 }
+
 footer .info .sns {
   display: flex;
   justify-content: space-between;
   margin-right: 84px;
 }
+
 footer .info .sns a {
   display: flex;
   align-items: center;
@@ -303,36 +288,44 @@ footer .info .sns a {
   border: solid 1px #e9e9ea;
   transition: 0.5s;
 }
+
 footer .info .sns a:hover {
   background-color: #edf0f0;
   color: #698182;
 }
+
 footer .nav {
   width: 16%;
 }
+
 footer .nav h2 {
   margin-bottom: 20px;
   font-weight: 500;
   line-height: 1;
 }
+
 footer .nav .list li {
   margin-bottom: 23px;
   font-size: 18px;
   color: #56565c;
   transition: all 0.5s;
 }
+
 footer .nav .list li:hover {
   color: rgb(43, 174, 41);
 }
+
 footer .contactMe {
   width: 22.1%;
   margin-left: auto;
 }
+
 footer .contactMe li {
   margin-bottom: 31px;
   font-size: 17px;
   color: #858585;
 }
+
 footer .contactMe li span {
   display: block;
   padding-top: 4px;
@@ -340,9 +333,11 @@ footer .contactMe li span {
   color: #56565c;
   transition: all 0.5s;
 }
+
 footer .contactMe li span:hover {
   color: rgb(43, 174, 41);
 }
+
 footer .copy {
   width: 100%;
   margin-top: 55px;
@@ -352,4 +347,24 @@ footer .copy {
   color: #78787d;
 }
 
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  background-color: #0a0a0a;
+  color: #ffffff;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body.isScroll {
+  overflow: hidden;
+}/*# sourceMappingURL=style.css.map */
