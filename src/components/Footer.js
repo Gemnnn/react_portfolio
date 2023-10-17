@@ -5,8 +5,9 @@ function Footer() {
         <footer>
             <ul className="inner">
                 <li className="info">
-                    <h1 className="logo"><NavLink exact to="/">Branden Min</NavLink><span>.</span></h1>
-                    <p>Junior Software Developer</p>
+                    <h1 className="logo"><NavLink exact to="/">Branden</NavLink></h1>
+                    <h1 className="logo"><NavLink exact to="/">Min</NavLink><span>.</span></h1>
+                    <p>Junior Software Developer & Data Analyst</p>
                     <div className="sns">
                         <a href="https://www.linkedin.com/in/brandenmin/" target='_blank'><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/Gemnnn" target='_blank'><i class="fa-brands fa-github"></i></a>

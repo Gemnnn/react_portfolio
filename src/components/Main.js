@@ -1,6 +1,11 @@
 function Main() {
     return(
-        <div>Main</div>
+        <div class='main'>
+            <div class='headline'>
+                <h1>Junior Developer</h1>
+                <h1>& Coffee Enthusiast.</h1>
+            </div>
+        </div>
     )
 }
 

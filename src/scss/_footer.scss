@@ -3,36 +3,43 @@ footer {
 	padding: 126px 0;
 	border-top: solid 1px #4a6869;
 	touch-action: none;
+	font-family: 'Poppins', sans-serif;
   }
-  footer .inner {
+footer .logo {
+	font-family: 'orpheus-pro', sans-serif;	
+}
+footer .logo span{
+	font-family: 'Poppins', sans-serif;
+}
+footer .inner {
 	display: flex;
 	flex-wrap: wrap;
 	width: 1200px;
 	margin: 0 auto;
   }
-  footer .info {
+footer .info {
 	width: 21%;
 	margin-right: 20%;
   }
-  footer .info .logo {
+footer .info .logo {
 	margin-bottom: 14px;
 	font-size: 40px;
 	line-height: 1;
 	font-weight: 700;
   }
-  footer .info .logo span {
+footer .info .logo span {
 	color: #4a6869;
   }
-  footer .info p {
+footer .info p {
 	margin-bottom: 39px;
 	font-size: 18px;
   }
-  footer .info .sns {
+footer .info .sns {
 	display: flex;
 	justify-content: space-between;
 	margin-right: 84px;
   }
-  footer .info .sns a {
+footer .info .sns a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -43,47 +50,47 @@ footer {
 	border: solid 1px #e9e9ea;
 	transition: 0.5s;
   }
-  footer .info .sns a:hover {
+footer .info .sns a:hover {
 	background-color: #edf0f0;
 	color: #698182;
   }
-  footer .nav {
+footer .nav {
 	width: 16%;
   }
-  footer .nav h2 {
+footer .nav h2 {
 	margin-bottom: 20px;
 	font-weight: 500;
 	line-height: 1;
   }
-  footer .nav .list li {
+footer .nav .list li {
 	margin-bottom: 23px;
 	font-size: 18px;
 	color: #56565c;
 	transition: all 0.5s;
   }
-  footer .nav .list li:hover {
+footer .nav .list li:hover {
 	color: rgb(43, 174, 41);
   }
-  footer .contactMe {
+footer .contactMe {
 	width: 22.1%;
 	margin-left: auto;
   }
-  footer .contactMe li {
+footer .contactMe li {
 	margin-bottom: 31px;
 	font-size: 17px;
 	color: #858585;
   }
-  footer .contactMe li span {
+footer .contactMe li span {
 	display: block;
 	padding-top: 4px;
 	font-size: 20px;
 	color: #56565c;
 	transition: all 0.5s;
   }
-  footer .contactMe li span:hover {
+footer .contactMe li span:hover {
 	color: rgb(43, 174, 41);
   }
-  footer .copy {
+footer .copy {
 	width: 100%;
 	margin-top: 55px;
 	padding: 26px 0;

@@ -2,6 +2,7 @@ header {
 	position: relative;
 	width: 100%;
 	z-index: 1;
+	font-family: 'Poppins', sans-serif;
   }
 header::before {
 	content: "";
@@ -32,30 +33,31 @@ header.li::after {
 	left: 0;
 	bottom: -8px;
   }
-  header.sub .inner {
+header.sub .inner {
 	padding: 20px;
   }
-  header .inner {
+header .inner {
 	display: flex;
 	width: 1328px;
 	margin: 0 auto;
 	padding: 40px 0;
 	align-items: center;
   }
-  header .logo {
+header .logo {
 	width: 31%;
-	font-size: 37px;
+	font-size: 35px;
+	font-family: 'orpheus-pro', sans-serif;
   }
-  header .logo span {
+header .logo span {
 	color: #4a6869;
   }
-  header .gnb {
+header .gnb {
 	position: relative;
 	width: 46%;
 	display: flex;
 	justify-content: space-between;
   }
-  header .gnb .line {
+header .gnb .line {
 	position: absolute;
 	left: 0;
 	bottom: -5px;
@@ -65,23 +67,23 @@ header.li::after {
 	transition: all 0.5s;
 	transition-timing-function: cubic-bezier(ease-in-out);
   }
-  header .gnb .line.on {
+header .gnb .line.on {
 	height: 5px;
   }
-  header .gnb li {
+header .gnb li {
 	position: relative;
 	font-size: 19px;
 	color: #4a6869;
 	font-weight: 500;
 	transition: all 0.5s;
   }
-  header .gnb li a {
+header .gnb li a {
 	transition: all 0.5s;
   }
-  header .gnb li a:hover {
+header .gnb li a:hover {
 	color: rgb(43, 174, 41);
   }
-  header .gnb li::after {
+header .gnb li::after {
 	content: '';
 	position: absolute;
 	background-color: #FFFFFF;
@@ -91,11 +93,11 @@ header.li::after {
 	bottom: -8px;
 	transition: all 0.5s ease;
   }
-  header .gnb li:hover::after {
+header .gnb li:hover::after {
 	width: 100%;
   }
   
-  header .contact {
+header .contact {
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -111,14 +113,14 @@ header.li::after {
 	color: #4a6869;
 	transition: all 0.5s;
   }
-  header .contact span {
+header .contact span {
 	opacity: 0;
 	color: inherit;
 	transform: translate3d(0, -10px, 0);
 	transition: transform 0.3s, opacity 0.3s;
 	transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
   }
-  header .contact::before {
+header .contact::before {
 	content: attr(data-text);
 	position: absolute;
 	top: 0;
@@ -129,33 +131,33 @@ header.li::after {
 	transition: transform 0.3s, opacity 0.3s;
 	transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
   }
-  header .contact:hover {
+header .contact:hover {
 	border: solid 1px #4a6869;
   }
-  header .contact:hover::before {
+header .contact:hover::before {
 	opacity: 0;
 	transform: translate3d(0, 100%, 0);
   }
-  header .contact:hover span {
+header .contact:hover span {
 	opacity: 1;
 	transform: translate3d(0, 0, 0);
   }
-  header .contact:hover span:nth-child(1) {
+header .contact:hover span:nth-child(1) {
 	transition-delay: 0.045s;
   }
-  header .contact:hover span:nth-child(2) {
+header .contact:hover span:nth-child(2) {
 	transition-delay: 0.105s;
   }
-  header .contact:hover span:nth-child(3) {
+header .contact:hover span:nth-child(3) {
 	transition-delay: 0.165s;
   }
-  header .contact:hover span:nth-child(4) {
+header .contact:hover span:nth-child(4) {
 	transition-delay: 0.225s;
   }
-  header .contact:hover span:nth-child(5) {
+header .contact:hover span:nth-child(5) {
 	transition-delay: 0.285s;
   }
-  header .totalMenuBtn {
+header .totalMenuBtn {
 	display: none;
 	border: none;
 	position: relative;
@@ -166,7 +168,7 @@ header.li::after {
 	cursor: pointer;
 	transition: all 0.5s;
   }
-  header .totalMenuBtn::before {
+header .totalMenuBtn::before {
 	content: "";
 	display: block;
 	position: absolute;
@@ -177,7 +179,7 @@ header.li::after {
 	transform-origin: left;
 	transition: all 0.5s;
   }
-  header .totalMenuBtn::after {
+header .totalMenuBtn::after {
 	content: "";
 	display: block;
 	position: absolute;
@@ -188,17 +190,17 @@ header.li::after {
 	transform-origin: left;
 	transition: all 0.5s;
   }
-  header .totalMenuBtn.on {
+header .totalMenuBtn.on {
 	width: 30px;
 	height: 30px;
 	border: none;
   }
-  header .totalMenuBtn.on::before {
+header .totalMenuBtn.on::before {
 	width: 140%;
 	transform: rotateZ(45deg);
 	background: #fff;
   }
-  header .totalMenuBtn.on::after {
+header .totalMenuBtn.on::after {
 	width: 140%;
 	top: calc(100% - 1px);
 	transform: rotateZ(-45deg);

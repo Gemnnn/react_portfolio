@@ -1,7 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: orpheus-pro;
+  src: url(https://use.typekit.net/af/4f5611/00000000000000007735ebd5/30/l?subset_id=2&fvd=n4&v=3) format("woff2"), url(https://use.typekit.net/af/4f5611/00000000000000007735ebd5/30/d?subset_id=2&fvd=n4&v=3) format("woff"), url(https://use.typekit.net/af/4f5611/00000000000000007735ebd5/30/a?subset_id=2&fvd=n4&v=3) format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: orpheus-pro;
+  src: url(https://use.typekit.net/af/8b252c/00000000000000007735ebd8/30/l?subset_id=2&fvd=n5&v=3) format("woff2"), url(https://use.typekit.net/af/8b252c/00000000000000007735ebd8/30/d?subset_id=2&fvd=n5&v=3) format("woff"), url(https://use.typekit.net/af/8b252c/00000000000000007735ebd8/30/a?subset_id=2&fvd=n5&v=3) format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: orpheus-pro;
+  src: url(https://use.typekit.net/af/003616/00000000000000007735ebd7/30/l?subset_id=2&fvd=n7&v=3) format("woff2"), url(https://use.typekit.net/af/003616/00000000000000007735ebd7/30/d?subset_id=2&fvd=n7&v=3) format("woff"), url(https://use.typekit.net/af/003616/00000000000000007735ebd7/30/a?subset_id=2&fvd=n7&v=3) format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: orpheus-pro;
+  src: url(https://use.typekit.net/af/aeffc0/00000000000000007735ebd6/30/l?subset_id=2&fvd=i4&v=3) format("woff2"), url(https://use.typekit.net/af/aeffc0/00000000000000007735ebd6/30/d?subset_id=2&fvd=i4&v=3) format("woff"), url(https://use.typekit.net/af/aeffc0/00000000000000007735ebd6/30/a?subset_id=2&fvd=i4&v=3) format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+  font-display: auto;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #0a0a0a;
+  color: #ffffff;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body.isScroll {
+  overflow: hidden;
+}
+
+body {
+  font-family: "orpheus-pro", sans-serif;
+}
+
+.headline {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  font-size: 200%;
+}
+
 header {
   position: relative;
   width: 100%;
   z-index: 1;
+  font-family: "Poppins", sans-serif;
 }
 
 header::before {
@@ -50,7 +116,8 @@ header .inner {
 
 header .logo {
   width: 31%;
-  font-size: 37px;
+  font-size: 35px;
+  font-family: "orpheus-pro", sans-serif;
 }
 
 header .logo span {
@@ -241,6 +308,15 @@ footer {
   padding: 126px 0;
   border-top: solid 1px #4a6869;
   touch-action: none;
+  font-family: "Poppins", sans-serif;
+}
+
+footer .logo {
+  font-family: "orpheus-pro", sans-serif;
+}
+
+footer .logo span {
+  font-family: "Poppins", sans-serif;
 }
 
 footer .inner {
@@ -345,26 +421,4 @@ footer .copy {
   border-top: solid 1px #eff3f0;
   text-align: center;
   color: #78787d;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  background-color: #0a0a0a;
-  color: #ffffff;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-body.isScroll {
-  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
