@@ -1,9 +1,20 @@
 header {
-	position: relative;
 	width: 100%;
+	position: flex;
+	justify-content: space-between;
+	align-items: center;
 	z-index: 1;
 	font-family: 'Poppins', sans-serif;
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+		align-items: flex-start;
+	}
   }
+
+header ul {
+	display: flex;
+}
 header::before {
 	content: "";
 	display: block;
@@ -76,6 +87,7 @@ header .gnb li {
 	color: #4a6869;
 	font-weight: 500;
 	transition: all 0.5s;
+	font-size: small;
   }
 header .gnb li a {
 	transition: all 0.5s;
@@ -98,6 +110,7 @@ header .gnb li:hover::after {
   }
   
 header .contact {
+	font-family: 'orpheus-pro', sans-serif;
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -108,9 +121,8 @@ header .contact {
 	text-align: center;
 	font-size: 22px;
 	font-weight: 500;
-	border: solid 1px #e0e7e1;
-	border-radius: 100px;
-	color: #4a6869;
+	border: solid 2px #e0e7e1;
+	color: #e0e7e1;
 	transition: all 0.5s;
   }
 header .contact span {
@@ -132,7 +144,8 @@ header .contact::before {
 	transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
   }
 header .contact:hover {
-	border: solid 1px #4a6869;
+	border: solid 2px #4a6869;
+	color: #4a6869;
   }
 header .contact:hover::before {
 	opacity: 0;
@@ -198,11 +211,11 @@ header .totalMenuBtn.on {
 header .totalMenuBtn.on::before {
 	width: 140%;
 	transform: rotateZ(45deg);
-	background: #fff;
+	background: #ffffff;
   }
 header .totalMenuBtn.on::after {
 	width: 140%;
 	top: calc(100% - 1px);
 	transform: rotateZ(-45deg);
-	background: #fff;
+	background: #ffffff;
   }

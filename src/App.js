@@ -2,6 +2,7 @@ import {Route} from 'react-router-dom';
 import { useState } from 'react';
 import './css/style.css';
 
+
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Main from './components/Main';
@@ -33,7 +34,7 @@ function App() {
       {/* </Switch> */}
       {/* <Main></Main> */}
       <Header></Header>
-      <Route exact path="/" component={Main}></Route>
+      <Route exact path="/react_portfolio" component={Main}></Route>
       {/* <Route exact path="/projects" component={Projects}></Route> */}
       <Route exact path="/projects" render={() => <Projects setCommuFirstContsIsActive={setCommuFirstContsIsActive} commuFirstContsIsActive={commuFirstContsIsActive}/>}></Route>
       <Route exact path="/experiences" component={Experiences}></Route>

@@ -1,9 +1,14 @@
 @charset "UTF-8";
 
+
 // Google fonts
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 // Other fonts
 @font-face{font-family:orpheus-pro;src:url(https://use.typekit.net/af/4f5611/00000000000000007735ebd5/30/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/4f5611/00000000000000007735ebd5/30/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/4f5611/00000000000000007735ebd5/30/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:orpheus-pro;src:url(https://use.typekit.net/af/8b252c/00000000000000007735ebd8/30/l?subset_id=2&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/8b252c/00000000000000007735ebd8/30/d?subset_id=2&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/8b252c/00000000000000007735ebd8/30/a?subset_id=2&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:orpheus-pro;src:url(https://use.typekit.net/af/003616/00000000000000007735ebd7/30/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/003616/00000000000000007735ebd7/30/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/003616/00000000000000007735ebd7/30/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:orpheus-pro;src:url(https://use.typekit.net/af/aeffc0/00000000000000007735ebd6/30/l?subset_id=2&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/aeffc0/00000000000000007735ebd6/30/d?subset_id=2&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/aeffc0/00000000000000007735ebd6/30/a?subset_id=2&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}
+
+@media (max-width: 768px) {
+  /* CSS styles for screens with a maximum width of 768px (typically for mobile) */
+}
 
 * {
     margin: 0;
@@ -36,6 +41,26 @@ body {
   margin-top: 70px;
   margin-bottom: 100px;
   font-size: 200%;
+}
+
+.main{
+  text-align: center;
+}
+
+.mainbody{
+  text-align: center;
+}
+
+.body1{
+  float: left;
+}
+
+.body2{
+  margin-bottom: 500px;
+}
+
+.myPhoto1 {
+  background-image: url(../images/photo1.jpg);
 }
 
 

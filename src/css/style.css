@@ -31,6 +31,9 @@
   font-stretch: normal;
   font-display: auto;
 }
+@media (max-width: 768px) {
+  /* CSS styles for screens with a maximum width of 768px (typically for mobile) */
+}
 * {
   margin: 0;
   padding: 0;
@@ -63,11 +66,43 @@ body {
   font-size: 200%;
 }
 
+.main {
+  text-align: center;
+}
+
+.mainbody {
+  text-align: center;
+}
+
+.body1 {
+  float: left;
+}
+
+.body2 {
+  margin-bottom: 500px;
+}
+
+.myPhoto1 {
+  background-image: url(../images/photo1.jpg);
+}
+
 header {
-  position: relative;
   width: 100%;
+  position: flex;
+  justify-content: space-between;
+  align-items: center;
   z-index: 1;
   font-family: "Poppins", sans-serif;
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+header ul {
+  display: flex;
 }
 
 header::before {
@@ -152,6 +187,7 @@ header .gnb li {
   color: #4a6869;
   font-weight: 500;
   transition: all 0.5s;
+  font-size: small;
 }
 
 header .gnb li a {
@@ -178,6 +214,7 @@ header .gnb li:hover::after {
 }
 
 header .contact {
+  font-family: "orpheus-pro", sans-serif;
   position: relative;
   display: flex;
   justify-content: center;
@@ -188,9 +225,8 @@ header .contact {
   text-align: center;
   font-size: 22px;
   font-weight: 500;
-  border: solid 1px #e0e7e1;
-  border-radius: 100px;
-  color: #4a6869;
+  border: solid 2px #e0e7e1;
+  color: #e0e7e1;
   transition: all 0.5s;
 }
 
@@ -215,7 +251,8 @@ header .contact::before {
 }
 
 header .contact:hover {
-  border: solid 1px #4a6869;
+  border: solid 2px #4a6869;
+  color: #4a6869;
 }
 
 header .contact:hover::before {
@@ -293,17 +330,18 @@ header .totalMenuBtn.on {
 header .totalMenuBtn.on::before {
   width: 140%;
   transform: rotateZ(45deg);
-  background: #fff;
+  background: #ffffff;
 }
 
 header .totalMenuBtn.on::after {
   width: 140%;
   top: calc(100% - 1px);
   transform: rotateZ(-45deg);
-  background: #fff;
+  background: #ffffff;
 }
 
 footer {
+  margin-top: 100px;
   width: 100%;
   padding: 126px 0;
   border-top: solid 1px #4a6869;
