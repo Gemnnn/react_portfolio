@@ -1,12 +1,15 @@
-function Experiences() {
-    return(
-        <div>
-            <h1>Experiences</h1>
-            <h3>Data Analyst</h3>
-            <h4>Manse eSolutiuons Inc.</h4>
-
-        </div>
-    )
-}
+const Experiences = ({ companyName, position, date, location , job }) => {
+    return (
+      <div className="experience-box">
+        <h3>{companyName}</h3>
+        <h4>{position}</h4>
+        <h5>{date}, {location}</h5>
+        <h5>
+            {job}
+        </h5>
+      </div>
+    );
+  };
+  
 
 export default Experiences;

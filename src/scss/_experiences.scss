@@ -1,0 +1,56 @@
+.experiences {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.experiences h2 {
+    font-size: 300%;
+    margin-bottom: 20px;
+}
+
+.experiences h3{
+    text-align: left;
+    background-color: white;
+    color: black;
+}
+
+.experiences h4{
+    text-align: left;
+    background-color: white;
+    color: black;
+}
+
+.experiences h5{
+    text-align: left;
+    background-color: white;
+    color: black;
+    white-space: pre-line;
+}
+.experience-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap as needed */
+    margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+.experience-box {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 600px;
+    padding: 20px; /* Add padding for better spacing */
+    background-color: white; /* Add a background color */
+    color: black; /* Set text color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease; /* Add transitions */
+}
+
+.experience-box:hover {
+    border: 3px solid yellowgreen;
+    color: black; /* Change text color on hover */
+    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease; /* Add transitions */
+}

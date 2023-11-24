@@ -31,19 +31,16 @@
   font-stretch: normal;
   font-display: auto;
 }
-@media (max-width: 768px) {
-  /* CSS styles for screens with a maximum width of 768px (typically for mobile) */
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* font-family: "Roboto", sans-serif; */
   background-color: #0a0a0a;
   color: #ffffff;
 }
 
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
 
@@ -51,12 +48,13 @@ a {
   text-decoration: none;
 }
 
-body.isScroll {
+.body.isScroll {
   overflow: hidden;
 }
 
-body {
+.body {
   font-family: "orpheus-pro", sans-serif;
+  height: 3000px;
 }
 
 .headline {
@@ -67,6 +65,7 @@ body {
 }
 
 .main {
+  overflow: auto;
   text-align: center;
 }
 
@@ -75,15 +74,43 @@ body {
 }
 
 .body1 {
-  float: left;
+  position: absolute;
+  filter: brightness(60%) contrast(130%);
+  width: 100%;
+  height: 1081px;
 }
 
 .body2 {
   margin-bottom: 500px;
+  position: absolute;
+  left: 70%;
+  top: 110%;
+  transform: translateX(-50%);
+  width: 35%;
+  font-size: 150%;
 }
 
+@media (max-width: 768px) {
+  .body {
+    font-family: "orpheus-pro", sans-serif;
+    height: 2200px;
+  }
+  .body1 {
+    filter: brightness(60%) contrast(130%);
+    height: 1081px;
+    width: 100%;
+  }
+  .body2 {
+    margin-bottom: 500px;
+    left: 50%;
+    top: 210%;
+    transform: translateX(-50%);
+    width: 80%;
+    font-size: 100%;
+  }
+}
 .myPhoto1 {
-  background-image: url(../images/photo1.jpg);
+  background-image: url(../images/photo1.png);
 }
 
 header {
@@ -186,12 +213,11 @@ header .gnb li {
   font-size: 19px;
   color: #4a6869;
   font-weight: 500;
-  transition: all 0.5s;
-  font-size: small;
+  transition: color 0.5s, font-size 0.5s;
 }
 
 header .gnb li a {
-  transition: all 0.5s;
+  transition: color 0.5s;
 }
 
 header .gnb li a:hover {
@@ -206,138 +232,48 @@ header .gnb li::after {
   width: 0;
   left: 0;
   bottom: -8px;
-  transition: all 0.5s ease;
+  transition: width 0.5s ease;
 }
 
 header .gnb li:hover::after {
   width: 100%;
 }
 
-header .contact {
-  font-family: "orpheus-pro", sans-serif;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  width: 13%;
-  overflow: hidden;
-  margin-left: auto;
-  padding: 16px 42px;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 500;
-  border: solid 2px #e0e7e1;
-  color: #e0e7e1;
-  transition: all 0.5s;
+/* Additional styling for a cleaner look */
+header .gnb li a {
+  text-decoration: none;
 }
 
-header .contact span {
-  opacity: 0;
-  color: inherit;
-  transform: translate3d(0, -10px, 0);
-  transition: transform 0.3s, opacity 0.3s;
-  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
-}
-
-header .contact::before {
-  content: attr(data-text);
+header .gnb li::before {
+  content: "";
   position: absolute;
+  background-color: transparent; /* Set the background color as needed */
+  height: 100%;
+  width: 100%;
   top: 0;
   left: 0;
-  width: 100%;
-  padding: 14px 0;
-  color: inherit;
-  transition: transform 0.3s, opacity 0.3s;
-  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  transition: background-color 0.5s;
 }
 
-header .contact:hover {
-  border: solid 2px #4a6869;
-  color: #4a6869;
+header .gnb li:hover::before {
+  background-color: rgba(255, 255, 255, 0.1); /* Set the background color on hover */
 }
 
-header .contact:hover::before {
-  opacity: 0;
-  transform: translate3d(0, 100%, 0);
+header .snsContact {
+  margin-left: 80px;
 }
 
-header .contact:hover span {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
+header .snsContact a {
+  font-size: 35px;
+  margin: 0 10px;
+  color: #333;
+  transition: color 0.3s ease;
 }
 
-header .contact:hover span:nth-child(1) {
-  transition-delay: 0.045s;
-}
-
-header .contact:hover span:nth-child(2) {
-  transition-delay: 0.105s;
-}
-
-header .contact:hover span:nth-child(3) {
-  transition-delay: 0.165s;
-}
-
-header .contact:hover span:nth-child(4) {
-  transition-delay: 0.225s;
-}
-
-header .contact:hover span:nth-child(5) {
-  transition-delay: 0.285s;
-}
-
-header .totalMenuBtn {
-  display: none;
-  border: none;
-  position: relative;
-  width: 35px;
-  height: 25px;
-  border-bottom: solid 2px #000;
-  background-color: transparent;
-  cursor: pointer;
-  transition: all 0.5s;
-}
-
-header .totalMenuBtn::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 2px;
-  background: #000;
-  transform-origin: left;
-  transition: all 0.5s;
-}
-
-header .totalMenuBtn::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  height: 2px;
-  background: #000;
-  transform-origin: left;
-  transition: all 0.5s;
-}
-
-header .totalMenuBtn.on {
-  width: 30px;
-  height: 30px;
-  border: none;
-}
-
-header .totalMenuBtn.on::before {
-  width: 140%;
-  transform: rotateZ(45deg);
-  background: #ffffff;
-}
-
-header .totalMenuBtn.on::after {
-  width: 140%;
-  top: calc(100% - 1px);
-  transform: rotateZ(-45deg);
-  background: #ffffff;
+header .snsContact a:hover {
+  color: #4caf50;
+  background-color: #4caf50;
+  font-size: 38px;
 }
 
 footer {
@@ -459,4 +395,123 @@ footer .copy {
   border-top: solid 1px #eff3f0;
   text-align: center;
   color: #78787d;
+}
+
+.contact {
+  margin-top: 50px;
+}
+
+.experiences {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.experiences h2 {
+  font-size: 300%;
+  margin-bottom: 20px;
+}
+
+.experiences h3 {
+  text-align: left;
+  background-color: white;
+  color: black;
+}
+
+.experiences h4 {
+  text-align: left;
+  background-color: white;
+  color: black;
+}
+
+.experiences h5 {
+  text-align: left;
+  background-color: white;
+  color: black;
+  white-space: pre-line;
+}
+
+.experience-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: gray;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Adjust the gap as needed */
+  margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+.experience-box {
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 600px;
+  padding: 20px; /* Add padding for better spacing */
+  background-color: white; /* Add a background color */
+  color: black; /* Set text color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+  transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease; /* Add transitions */
+}
+
+.experience-box:hover {
+  border: 3px solid yellowgreen;
+  color: black; /* Change text color on hover */
+  transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease; /* Add transitions */
+}
+
+.projects {
+  text-align: center;
+  margin-top: 1200px;
+}
+
+.projects h2 {
+  font-size: 300%;
+  margin-bottom: 20px;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Adjust the gap as needed */
+  margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+.project-box {
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px; /* Add padding for better spacing */
+  background-color: #333; /* Add a background color */
+  color: white; /* Set text color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+  transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease; /* Add transitions */
+}
+
+.project-box:hover {
+  border: 3px solid yellowgreen;
+  color: black; /* Change text color on hover */
+  transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease; /* Add transitions */
+}
+
+.projects h3 {
+  background-color: #333;
+}
+
+.projects p {
+  background-color: #333;
+}
+
+.projects a {
+  background-color: #333;
+  color: palevioletred;
+}
+
+.project a:hover {
+  font-weight: bold;
+}
+
+.skills {
+  margin-top: 50px;
 }/*# sourceMappingURL=style.css.map */
