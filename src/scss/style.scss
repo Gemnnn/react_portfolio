@@ -68,17 +68,18 @@ a {
 @media (max-width: 768px) {
   .body {
     font-family: 'orpheus-pro', sans-serif;
-    height: 2200px;
+    height: 4200px;
   }
 
   .body1 {
     filter: brightness(60%) contrast(130%);
-    height: 1081px;
+    height: 1100px;
     width: 100%;
   }
 
   .body2 {
     margin-bottom: 500px;
+    padding-top: 20px;
     left: 50%;
     top: 210%;
     transform: translateX(-50%);

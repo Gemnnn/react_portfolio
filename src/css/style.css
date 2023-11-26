@@ -93,15 +93,16 @@ a {
 @media (max-width: 768px) {
   .body {
     font-family: "orpheus-pro", sans-serif;
-    height: 2200px;
+    height: 4200px;
   }
   .body1 {
     filter: brightness(60%) contrast(130%);
-    height: 1081px;
+    height: 1100px;
     width: 100%;
   }
   .body2 {
     margin-bottom: 500px;
+    padding-top: 20px;
     left: 50%;
     top: 210%;
     transform: translateX(-50%);
@@ -121,58 +122,17 @@ header {
   z-index: 1;
   font-family: "Poppins", sans-serif;
 }
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
 
 header ul {
   display: flex;
 }
 
-header::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 0;
-  background: linear-gradient(270deg, transparent, #cddc39, transparent);
-}
-
-header::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0%;
-  width: 100%;
-  height: 0;
-  background: linear-gradient(270deg, transparent, #4caf50, transparent);
-}
-
-header.li::after {
-  content: "";
-  position: absolute;
-  background-color: #ffffff;
-  height: 3px;
-  width: 100%;
-  left: 0;
-  bottom: -8px;
-}
-
-header.sub .inner {
-  padding: 20px;
-}
-
 header .inner {
   display: flex;
-  width: 1328px;
+  width: 100%;
   margin: 0 auto;
   padding: 40px 0;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -180,51 +140,20 @@ header .logo {
   width: 31%;
   font-size: 35px;
   font-family: "orpheus-pro", sans-serif;
+  margin-left: 50px;
 }
 
 header .logo span {
   color: #4a6869;
 }
 
-header .gnb {
+header .web {
   position: relative;
-  width: 46%;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
 }
 
-header .gnb .line {
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 100px;
-  height: 0px;
-  background: #4a6869;
-  transition: all 0.5s;
-  transition-timing-function: cubic-bezier(ease-in-out);
-}
-
-header .gnb .line.on {
-  height: 5px;
-}
-
-header .gnb li {
-  position: relative;
-  font-size: 19px;
-  color: #4a6869;
-  font-weight: 500;
-  transition: color 0.5s, font-size 0.5s;
-}
-
-header .gnb li a {
-  transition: color 0.5s;
-}
-
-header .gnb li a:hover {
-  color: rgb(43, 174, 41);
-}
-
-header .gnb li::after {
+header .web a::after {
   content: "";
   position: absolute;
   background-color: #FFFFFF;
@@ -235,32 +164,29 @@ header .gnb li::after {
   transition: width 0.5s ease;
 }
 
-header .gnb li:hover::after {
+header .web a:hover::after {
   width: 100%;
 }
 
-/* Additional styling for a cleaner look */
-header .gnb li a {
-  text-decoration: none;
+header .web a {
+  display: flex;
+  position: relative;
+  font-size: 19px;
+  flex-grow: 1;
+  font-weight: 500;
+  transition: color 0.5s, font-size 0.5s;
+  text-align: center;
+  padding: 0 10px;
+  margin: 0 5px; /* Adjust as needed */
 }
 
-header .gnb li::before {
-  content: "";
-  position: absolute;
-  background-color: transparent; /* Set the background color as needed */
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  transition: background-color 0.5s;
-}
-
-header .gnb li:hover::before {
-  background-color: rgba(255, 255, 255, 0.1); /* Set the background color on hover */
+header .web a:hover {
+  color: rgb(203, 195, 40);
 }
 
 header .snsContact {
-  margin-left: 80px;
+  margin-left: auto;
+  margin-right: 50px;
 }
 
 header .snsContact a {
@@ -276,6 +202,72 @@ header .snsContact a:hover {
   font-size: 38px;
 }
 
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+  }
+}
+.mobile-menu {
+  display: none;
+}
+
+.toggle-button {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.mobile-menu.open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100px;
+  left: 150px;
+  width: 200px;
+  height: 340px;
+  background-color: #333;
+  z-index: 1;
+}
+
+.mobile-menu.open .gnb {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+.mobile-menu.open .gnb a {
+  display: flex;
+  font-size: 18px;
+  padding: 15px;
+  color: white;
+  width: auto;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.mobile-menu.open .gnb a:hover {
+  color: black;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .gnb {
+    display: none;
+  }
+  .web {
+    visibility: hidden;
+    width: 0;
+  }
+  .pc-menu {
+    visibility: hidden;
+    width: 0;
+  }
+  .mobile-menu {
+    display: flex;
+    align-items: center;
+  }
+}
 footer {
   margin-top: 100px;
   width: 100%;
@@ -512,6 +504,11 @@ footer .copy {
   font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  .projects {
+    margin-top: 1500px;
+  }
+}
 .skills {
   margin-top: 50px;
 }/*# sourceMappingURL=style.css.map */
