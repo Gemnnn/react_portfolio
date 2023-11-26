@@ -2,6 +2,7 @@ import React from 'react';
 import myPhoto1 from '../images/photo1.png';
 import Projects from './Projects';
 import Experiences from './Experiences';
+import { useEffect } from 'react';
 
 const Main = () => {
   const projectsData = [
@@ -36,12 +37,21 @@ const Main = () => {
     }
   ];
 
+
   return (
     <div className='body'>
       <div className='main'>
-        <div className='headline' id='headline'>
-          <h1>Junior Developer</h1>
-          <h1>& Coffee Enthusiast.</h1>
+        {/* <div className='container'>
+          <div className='headline'>
+            <h1>Junior Developer</h1>
+            <h1>& Coffee Enthusiast.</h1>
+          </div>
+        </div> */}
+        <div className='container'>
+          <div className='headline'>
+            <h1 className='animated-text'>Junior Developer</h1>
+            <h1 className='animated-text'>& Coffee Enthusiast.</h1>
+          </div>
         </div>
         <div className='mainbody'>
           <div className="body1">
@@ -72,10 +82,10 @@ const Main = () => {
             </div>
         </div>
         <div className='skills' id='skills'>
-            <h3>Skills</h3>
+            <h2>Skills</h2>
         </div>
         <div className='contact' id='contact'>
-            <h3>Contact</h3>
+            <h2>Contact</h2>
         </div>
       </div>
     </div>

@@ -48,6 +48,53 @@ a {
   text-decoration: none;
 }
 
+.container {
+  text-align: center;
+  padding: 50px;
+}
+
+.headline {
+  display: inline-block;
+}
+
+.animated-text {
+  opacity: 0;
+  animation: complexAnimation 4s ease-in-out infinite alternate;
+}
+
+@keyframes complexAnimation {
+  0% {
+    opacity: 1;
+    color: #3498db;
+  }
+  20% {
+    opacity: 1;
+    color: #e74c3c;
+  }
+  40% {
+    opacity: 1;
+    color: #2ecc71;
+  }
+  60% {
+    opacity: 1;
+    color: #f39c12;
+  }
+  80% {
+    opacity: 1;
+    color: #3498db;
+  }
+  100% {
+    opacity: 1;
+    color: #1abc9c;
+  }
+}
+h1 {
+  margin: 0;
+  font-family: "orpheus-pro", sans-serif;
+  font-size: 2em;
+  transition: color 0.5s;
+}
+
 .body.isScroll {
   overflow: hidden;
 }
@@ -81,12 +128,11 @@ a {
 }
 
 .body2 {
-  margin-bottom: 500px;
-  position: absolute;
+  position: relative;
   left: 70%;
-  top: 110%;
+  top: 200px;
   transform: translateX(-50%);
-  width: 35%;
+  width: 400px;
   font-size: 150%;
 }
 
@@ -99,15 +145,16 @@ a {
     filter: brightness(60%) contrast(130%);
     height: 1100px;
     width: 100%;
+    position: relative;
   }
   .body2 {
-    margin-bottom: 500px;
     padding-top: 20px;
     left: 50%;
-    top: 210%;
+    position: relative;
     transform: translateX(-50%);
     width: 80%;
     font-size: 100%;
+    margin-bottom: 0;
   }
 }
 .myPhoto1 {
@@ -343,20 +390,16 @@ footer .info .sns {
 }
 
 footer .info .sns a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  padding: 12px;
-  border-radius: 84px;
-  border: solid 1px #e9e9ea;
-  transition: 0.5s;
+  font-size: 35px;
+  margin: 0 10px;
+  color: #333;
+  transition: color 0.3s ease;
 }
 
 footer .info .sns a:hover {
-  background-color: #edf0f0;
-  color: #698182;
+  color: #4caf50;
+  background-color: #4caf50;
+  font-size: 38px;
 }
 
 footer .nav {
@@ -476,7 +519,7 @@ footer .copy {
 
 .projects {
   text-align: center;
-  margin-top: 1200px;
+  margin-top: 500px;
 }
 
 .projects h2 {
@@ -529,7 +572,7 @@ footer .copy {
 
 @media (max-width: 768px) {
   .projects {
-    margin-top: 1500px;
+    margin-top: 100px;
   }
 }
 .skills {
