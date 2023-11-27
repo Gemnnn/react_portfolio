@@ -101,7 +101,7 @@ h1 {
 
 .body {
   font-family: "orpheus-pro", sans-serif;
-  height: 3000px;
+  height: 3200px;
 }
 
 .headline {
@@ -112,7 +112,6 @@ h1 {
 }
 
 .main {
-  overflow: auto;
   text-align: center;
 }
 
@@ -136,16 +135,25 @@ h1 {
   font-size: 150%;
 }
 
+.body2 p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+}
+
 @media (max-width: 768px) {
   .body {
     font-family: "orpheus-pro", sans-serif;
     height: 4200px;
   }
+  .mainbody {
+    padding-bottom: 0;
+  }
   .body1 {
     filter: brightness(60%) contrast(130%);
-    height: 1100px;
     width: 100%;
     position: relative;
+    margin: 0;
+    height: 950px;
   }
   .body2 {
     padding-top: 20px;
@@ -154,7 +162,7 @@ h1 {
     transform: translateX(-50%);
     width: 80%;
     font-size: 100%;
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 .myPhoto1 {
@@ -471,49 +479,58 @@ footer .copy {
 
 .experiences h3 {
   text-align: left;
-  background-color: white;
-  color: black;
+  background-color: 0a0a0a;
+  color: white;
+  font-size: 130%;
 }
 
 .experiences h4 {
   text-align: left;
-  background-color: white;
-  color: black;
+  background-color: 0a0a0a;
+  color: white;
+  font-size: 120%;
 }
 
 .experiences h5 {
   text-align: left;
-  background-color: white;
-  color: black;
+  background-color: 0a0a0a;
+  color: white;
   white-space: pre-line;
+  font-size: 120%;
+}
+
+.ex-info {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
 }
 
 .experience-container {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: gray;
+  background-color: 0a0a0a;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px; /* Adjust the gap as needed */
   margin-top: 20px; /* Adjust the top margin as needed */
+  width: auto;
 }
 
 .experience-box {
   text-align: center;
-  border: 2px solid black;
+  border: 0 0 0 2px solid 0a0a0a;
   border-radius: 10px;
-  width: 600px;
+  width: 800px;
   padding: 20px; /* Add padding for better spacing */
-  background-color: white; /* Add a background color */
-  color: black; /* Set text color */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+  background-color: 0a0a0a; /* Add a background color */
+  color: 0a0a0a; /* Set text color */
+  box-shadow: 0 0 10px rgb(255, 255, 255); /* Add a subtle box shadow */
   transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease; /* Add transitions */
 }
 
 .experience-box:hover {
   border: 3px solid yellowgreen;
-  color: black; /* Change text color on hover */
+  color: 0a0a0a; /* Change text color on hover */
   transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease; /* Add transitions */
 }
 
@@ -524,7 +541,7 @@ footer .copy {
 
 .projects h2 {
   font-size: 300%;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .project-container {
@@ -541,9 +558,9 @@ footer .copy {
   border-radius: 10px;
   width: 300px;
   padding: 20px; /* Add padding for better spacing */
-  background-color: #333; /* Add a background color */
+  background-color: #0a0a0a; /* Add a background color */
   color: white; /* Set text color */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+  box-shadow: 0 0 10px rgb(255, 255, 255); /* Add a subtle box shadow */
   transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease; /* Add transitions */
 }
 
@@ -554,16 +571,19 @@ footer .copy {
 }
 
 .projects h3 {
-  background-color: #333;
+  background-color: #0a0a0a;
 }
 
 .projects p {
-  background-color: #333;
+  background-color: #0a0a0a;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
 }
 
 .projects a {
-  background-color: #333;
+  background-color: #0a0a0a;
   color: palevioletred;
+  font-family: "Poppins", sans-serif;
 }
 
 .project a:hover {
@@ -572,7 +592,7 @@ footer .copy {
 
 @media (max-width: 768px) {
   .projects {
-    margin-top: 100px;
+    margin-top: 300px;
   }
 }
 .skills {

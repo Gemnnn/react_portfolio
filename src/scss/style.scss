@@ -39,6 +39,7 @@ a {
   animation: complexAnimation 4s ease-in-out infinite alternate;
 }
 
+// 
 @keyframes complexAnimation {
   0% {
     opacity: 1;
@@ -89,7 +90,7 @@ h1 {
 
 .body {
   font-family: 'orpheus-pro', sans-serif;
-  height: 3000px;
+  height: 3200px;
 }
 
 .headline {
@@ -100,7 +101,6 @@ h1 {
 }
 
 .main {
-  overflow: auto;
   text-align: center;
 }
 
@@ -125,17 +125,28 @@ h1 {
   font-size: 150%;
 }
 
+.body2 p{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+}
+
 @media (max-width: 768px) {
   .body {
     font-family: 'orpheus-pro', sans-serif;
     height: 4200px;
   }
 
+  .mainbody {
+    padding-bottom: 0;
+  }
+
   .body1 {
     filter: brightness(60%) contrast(130%);
-    height: 1100px;
+    // height: 1100px;
     width: 100%;
     position: relative;
+    margin: 0;
+    height: 950px;
   }
 
   .body2 {
@@ -145,7 +156,8 @@ h1 {
     transform: translateX(-50%);
     width: 80%;
     font-size: 100%;
-    margin-bottom: 0;
+    margin: 0;
+
   }
 }
 

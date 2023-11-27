@@ -7,13 +7,13 @@ import { useEffect } from 'react';
 const Main = () => {
   const projectsData = [
     {
-        projectName: 'BellGeekfest2023',
+        projectName: 'BellGeekfest 2023',
         briefInfo:
             'Participated in a three-day hackathon hosted by Bell that focused on developing technology solutions for online privacy and security. My team developed a privacy-preserving Chrome extension that leverages the OpenAI API and uses React and Vite on the front-end, with a Flask backend implemented in Python.',
         gitLink: 'https://github.com/junseo-yang/BellGeekfest2023',
     },
     {
-        projectName: 'BellGeetfest2022',
+        projectName: 'BellGeetfest 2022',
         briefInfo: 
             'I participated in a three-day hackathon hosted by Bell that focused on diversity. Our team developed a diversity translator and diversity calendar using React.',
         gitLink: '#',
@@ -86,6 +86,21 @@ const Main = () => {
         </div>
         <div className='contact' id='contact'>
             <h2>Contact</h2>
+            <div className='message-input'>
+              <input
+                type='tel'
+                placeholder='Recipient Phone Number'
+                // value={phoneNumber}
+                // onChange={handlePhoneNumberChange}
+              />
+              <input
+                type='text'
+                placeholder='Send me a message...'
+                // value={userMessage}
+                // onChange={handleInputChange}
+              />
+              {/* <button onClick={handleSendMessage}>Send SMS</button> */}
+            </div>
         </div>
       </div>
     </div>

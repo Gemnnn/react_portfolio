@@ -5,7 +5,7 @@
 
 .projects h2 {
     font-size: 300%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .project-container {
@@ -22,9 +22,9 @@
     border-radius: 10px;
     width: 300px;
     padding: 20px; /* Add padding for better spacing */
-    background-color: #333; /* Add a background color */
+    background-color: #0a0a0a; /* Add a background color */
     color: white; /* Set text color */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+    box-shadow: 0 0 10px rgb(255, 255, 255); /* Add a subtle box shadow */
     transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease; /* Add transitions */
 }
 
@@ -35,16 +35,19 @@
 }
 
 .projects h3 {
-    background-color: #333;
+    background-color: #0a0a0a;
 }
 
 .projects p{
-    background-color: #333;
+    background-color: #0a0a0a;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
 }
 
 .projects a{
-    background-color: #333;
+    background-color: #0a0a0a;
     color: palevioletred;
+    font-family: 'Poppins', sans-serif;
 }
 
 .project a:hover {
@@ -53,6 +56,6 @@
 
 @media (max-width: 768px) {
     .projects{
-        margin-top: 100px;
+        margin-top: 300px;
     }
 }

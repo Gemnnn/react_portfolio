@@ -4,7 +4,7 @@ const Experiences = ({ companyName, position, date, location , job }) => {
         <h3>{companyName}</h3>
         <h4>{position}</h4>
         <h5>{date}, {location}</h5>
-        <h5>
+        <h5 class="ex-info">
             {job}
         </h5>
       </div>

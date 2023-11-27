@@ -4,7 +4,7 @@ const Projects = ({ projectName, briefInfo, gitLink }) => {
       <h3>{projectName}</h3>
       <p>{briefInfo}</p>
       <a href={gitLink} target="_blank" rel="noopener noreferrer">
-        GitHub Repository
+        GitHub Repository →
       </a>
     </div>
   );
