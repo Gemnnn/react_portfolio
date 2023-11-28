@@ -1,7 +1,7 @@
 footer {
 	margin-top: 100px;
 	width: 100%;
-	padding: 126px 0;
+	padding-top: 126px;
 	border-top: solid 1px #4a6869;
 	touch-action: none;
 	font-family: 'Poppins', sans-serif;
@@ -92,7 +92,9 @@ footer .contactMe li span:hover {
 footer .copy {
 	width: 100%;
 	margin-top: 55px;
-	padding: 26px 0;
+	padding-top: 26px;
+	padding-bottom: 26px;
+	margin-bottom: 5px;
 	border-top: solid 1px #eff3f0;
 	text-align: center;
 	color: #78787d;
