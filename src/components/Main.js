@@ -37,6 +37,10 @@ const Main = () => {
     }
   ];
 
+  // const sendEmail = (sectionId) => {
+  //   const section = document.getElementById(sectionId);
+  // }
+
 
   return (
     <div className='body'>
@@ -86,21 +90,22 @@ const Main = () => {
         </div>
         <div className='contact' id='contact'>
             <h2>Contact</h2>
-            <div className='message-input'>
+            {/* <div className='message-input'>
               <input
                 type='tel'
                 placeholder='Recipient Phone Number'
-                // value={phoneNumber}
-                // onChange={handlePhoneNumberChange}
+                value={phoneNumber}
+                onChange={handlePhoneNumberChange}
               />
               <input
                 type='text'
                 placeholder='Send me a message...'
-                // value={userMessage}
-                // onChange={handleInputChange}
+                value={userMessage}
+                onChange={handleInputChange}
               />
-              {/* <button onClick={handleSendMessage}>Send SMS</button> */}
-            </div>
+              <button onClick={handleSendMessage}>Send SMS</button>
+            </div> */}
+            {/* <button onClick={sendEmail}>Send E-mail</button> */}
         </div>
       </div>
     </div>

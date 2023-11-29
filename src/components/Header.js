@@ -35,7 +35,7 @@ function Header() {
       />
       <div className="inner">
         <h1 className="logo">
-          <NavLink exact to="/react_portfolio">
+          <NavLink exact to="/portfolio">
             Branden Min
           </NavLink>
         </h1>
@@ -45,20 +45,20 @@ function Header() {
               <i className={`fas ${isNavVisible ? 'fa-times' : 'fa-bars'}`}></i>
             </span>
             <ul className={`gnb ${isNavVisible ? 'open' : ''}`}>
-              <a><NavLink onClick={() => scrollToSection("body2")} to="/react_portfolio#body2">ABOUT</NavLink></a>
-              <a><NavLink onClick={() => scrollToSection("projects")} to="/react_portfolio#projects">PROJECTS</NavLink></a>
-              <a><NavLink onClick={() => scrollToSection("experiences")} to="/react_portfolio#experiences">EXPERIENCES</NavLink></a>
-              <a><NavLink onClick={() => scrollToSection("skills")} to="/react_portfolio#skills">SKILLS</NavLink></a>
-              <a><NavLink onClick={() => window.open('/react_portfolio/BrandenMin.pdf', '_black')} to="/Cv">CV</NavLink></a>
+              <a><NavLink onClick={() => scrollToSection("body2")} to="/portfolio#body2">ABOUT</NavLink></a>
+              <a><NavLink onClick={() => scrollToSection("projects")} to="/portfolio#projects">PROJECTS</NavLink></a>
+              <a><NavLink onClick={() => scrollToSection("experiences")} to="/portfolio#experiences">EXPERIENCES</NavLink></a>
+              <a><NavLink onClick={() => scrollToSection("skills")} to="/portfolio#skills">SKILLS</NavLink></a>
+              <a><NavLink onClick={() => window.open('/BrandenMin.pdf', '_black')} to="portfolio/#cv">CV</NavLink></a>
             </ul>
           </div>
           <div className='pc-menu'>
             <ul className='web'>
-              <a><NavLink onClick={() => scrollToSection("body2")} to="/react_portfolio#body2">ABOUT</NavLink></a>
-              <a><NavLink onClick={() => scrollToSection("projects")} to="/react_portfolio#projects">PROJECTS</NavLink></a>
-              <a><NavLink onClick={() => scrollToSection("experiences")} to="/react_portfolio#experiences">EXPERIENCES</NavLink></a>
-              <a><NavLink onClick={() => scrollToSection("skills")} to="/react_portfolio#skills">SKILLS</NavLink></a>
-              <a><NavLink onClick={() => window.open('/react_portfolio/BrandenMin.pdf', '_black')} to="/Cv">CV</NavLink></a>
+              <a><NavLink onClick={() => scrollToSection("body2")} to="/portfolio#body2">ABOUT</NavLink></a>
+              <a><NavLink onClick={() => scrollToSection("projects")} to="/portfolio#projects">PROJECTS</NavLink></a>
+              <a><NavLink onClick={() => scrollToSection("experiences")} to="/portfolio#experiences">EXPERIENCES</NavLink></a>
+              <a><NavLink onClick={() => scrollToSection("skills")} to="/portfolio#skills">SKILLS</NavLink></a>
+              <a><NavLink onClick={() => window.open('/BrandenMin.pdf', '_black')} to="/portfolio#cv">CV</NavLink></a>
             </ul>
           </div>
           <div className="snsContact">

@@ -34,7 +34,7 @@ function App() {
       {/* </Switch> */}
       {/* <Main></Main> */}
       <Header></Header>
-      <Route exact path="/react_portfolio" component={Main}></Route>
+      <Route exact path="/portfolio" component={Main}></Route>
       {/* <Route exact path="/projects" component={Projects}></Route> */}
       <Route exact path="/projects" render={() => <Projects setCommuFirstContsIsActive={setCommuFirstContsIsActive} commuFirstContsIsActive={commuFirstContsIsActive}/>}></Route>
       <Route exact path="/experiences" component={Experiences}></Route>
