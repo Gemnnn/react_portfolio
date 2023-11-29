@@ -1,4 +1,4 @@
-## View Portfolio Web site : https://gemnnn.github.io/react_portfolio/
+## View Portfolio Web site : https://gemnnn.github.io/portfolio/
 
 # Getting Started with Create React App
 
