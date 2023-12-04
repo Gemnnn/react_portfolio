@@ -7,33 +7,39 @@ import { useEffect } from 'react';
 const Main = () => {
   const projectsData = [
     {
-        projectName: 'BellGeekfest 2023',
-        briefInfo:
-            'Participated in a three-day hackathon hosted by Bell that focused on developing technology solutions for online privacy and security. My team developed a privacy-preserving Chrome extension that leverages the OpenAI API and uses React and Vite on the front-end, with a Flask backend implemented in Python.',
-        gitLink: 'https://github.com/junseo-yang/BellGeekfest2023',
+      projectName: 'Mystagram',
+      briefInfo:
+        'To study Android Studio and Kotlin a little more in-depth, I am developing a social media application based on the concept of Instagram.',
+      gitLink: 'https://github.com/Gemnnn/Android_Projects/tree/main/Project/Mystagram',
     },
     {
-        projectName: 'BellGeetfest 2022',
-        briefInfo: 
-            'I participated in a three-day hackathon hosted by Bell that focused on diversity. Our team developed a diversity translator and diversity calendar using React.',
-        gitLink: '#',
+      projectName: 'BellGeekfest 2023',
+      briefInfo:
+        'Participated in a three-day hackathon hosted by Bell that focused on developing technology solutions for online privacy and security. My team developed a privacy-preserving Chrome extension that leverages the OpenAI API and uses React and Vite on the front-end, with a Flask backend implemented in Python.',
+      gitLink: 'https://github.com/junseo-yang/BellGeekfest2023',
+    },
+    {
+      projectName: 'BellGeetfest 2022',
+      briefInfo: 
+        'I participated in a three-day hackathon hosted by Bell that focused on diversity. Our team developed a diversity translator and diversity calendar using React.',
+      gitLink: '#',
     }
     // Add more projects as needed
   ];
   const experiencesData = [
     {
-        companyName: 'Manse eSolution Inc.', 
-        position: 'Data Analysis & Junior Developer', 
-        date: 'Aug 2022 - Aug 2023', 
-        location: "Guelph - Hybrid", 
-        job: '• Worked on updating the address book feature, a Grain Management System core component. \n • Built a project that displays markers on a map in the program according to the customer\'s address book and allows the indicated markers to be selected, grouped, and used flexibly using API \n • Database redesign of core tables and entities, updated application code to reflect database changes'
+      companyName: 'Manse eSolution Inc.', 
+      position: 'Data Analysis & Junior Developer', 
+      date: 'Aug 2022 - Aug 2023', 
+      location: "Guelph - Hybrid", 
+      job: '• Worked on updating the address book feature, a Grain Management System core component. \n • Built a project that displays markers on a map in the program according to the customer\'s address book and allows the indicated markers to be selected, grouped, and used flexibly using API \n • Database redesign of core tables and entities, updated application code to reflect database changes'
     },
     {
-        companyName: 'Starbucks', 
-        position: 'Barista', 
-        date: 'Jun 2021 - Current', 
-        location: "Toronto & Waterloo", 
-        job: '• Created the best Starbucks experience by connecting with customers and contributing to store and company operations through best-in-class customer service. \n • Grew Customer Connection score from 29 to 48'
+      companyName: 'Starbucks', 
+      position: 'Barista', 
+      date: 'Jun 2021 - Current', 
+      location: "Toronto & Waterloo", 
+      job: '• Created the best Starbucks experience by connecting with customers and contributing to store and company operations through best-in-class customer service. \n • Grew Customer Connection score from 29 to 48'
     }
   ];
 
