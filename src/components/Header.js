@@ -48,8 +48,8 @@ function Header() {
               <a><NavLink onClick={() => scrollToSection("body2")} to="/portfolio#body2">ABOUT</NavLink></a>
               <a><NavLink onClick={() => scrollToSection("projects")} to="/portfolio#projects">PROJECTS</NavLink></a>
               <a><NavLink onClick={() => scrollToSection("experiences")} to="/portfolio#experiences">EXPERIENCES</NavLink></a>
-              <a><NavLink onClick={() => scrollToSection("skills")} to="/portfolio#skills">SKILLS</NavLink></a>
-              <a><NavLink onClick={() => window.open('/BrandenMin.pdf', '_black')} to="portfolio/#cv">CV</NavLink></a>
+              <a><NavLink onClick={() => scrollToSection("interests")} to="/portfolio#interests">INTERESTS</NavLink></a>
+              <a><NavLink onClick={() => window.open('/portfolio/BrandenMin.pdf.pdf', '_black')} to="portfolio/#cv">CV</NavLink></a>
             </ul>
           </div>
           <div className='pc-menu'>
@@ -57,8 +57,8 @@ function Header() {
               <a><NavLink onClick={() => scrollToSection("body2")} to="/portfolio#body2">ABOUT</NavLink></a>
               <a><NavLink onClick={() => scrollToSection("projects")} to="/portfolio#projects">PROJECTS</NavLink></a>
               <a><NavLink onClick={() => scrollToSection("experiences")} to="/portfolio#experiences">EXPERIENCES</NavLink></a>
-              <a><NavLink onClick={() => scrollToSection("skills")} to="/portfolio#skills">SKILLS</NavLink></a>
-              <a><NavLink onClick={() => window.open('/BrandenMin.pdf', '_black')} to="/portfolio#cv">CV</NavLink></a>
+              <a><NavLink onClick={() => scrollToSection("interests")} to="/portfolio#interests">INTERESTS</NavLink></a>
+              <a><NavLink onClick={() => window.open('/portfolio/BrandenMin.pdf', '_black')} to="/portfolio#cv">CV</NavLink></a>
             </ul>
           </div>
           <div className="snsContact">
