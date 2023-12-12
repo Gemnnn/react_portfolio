@@ -7,13 +7,19 @@ import { useEffect } from 'react';
 const Main = () => {
   const projectsData = [
     {
-      projectName: 'Mystagram',
+      projectName: 'Mini Games',
+      briefInfo:
+      'This is a mini-game application that allows you to enjoy various simple games. I created it because I love games and want to study Kotlin in-depth.',
+      gitLink: 'https://github.com/Gemnnn/Android_Projects/tree/main/Project/MiniGames',
+    },
+    {
+      projectName: 'My stagram',
       briefInfo:
         'To study Android Studio and Kotlin a little more in-depth, I am developing a social media application based on the concept of Instagram.',
       gitLink: 'https://github.com/Gemnnn/Android_Projects/tree/main/Project/Mystagram',
     },
     {
-      projectName: 'BellGeekfest 2023',
+      projectName: 'BellGeekfest 2023 (TCM)',
       briefInfo:
         'Participated in a three-day hackathon hosted by Bell that focused on developing technology solutions for online privacy and security. My team developed a privacy-preserving Chrome extension that leverages the OpenAI API and uses React and Vite on the front-end, with a Flask backend implemented in Python.',
       gitLink: 'https://github.com/junseo-yang/BellGeekfest2023',
@@ -91,8 +97,8 @@ const Main = () => {
                 ))}
             </div>
         </div>
-        <div className='skills' id='skills'>
-            <h2>Skills</h2>
+        <div className='interests' id='interests'>
+            <h2>Interests</h2>
         </div>
         <div className='contact' id='contact'>
             <h2>Contact</h2>

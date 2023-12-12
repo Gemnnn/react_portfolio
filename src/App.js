@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import Main from './components/Main';
 import Projects from './components/Projects';
 import Experiences from './components/Experiences';
-import Skills from './components/Skills';
+import Interests from './components/Interests';
 import Youtube from './components/Youtube';
 import Mymap from './components/Mymap';
 import Cv from './components/Cv';
@@ -38,7 +38,7 @@ function App() {
       {/* <Route exact path="/projects" component={Projects}></Route> */}
       <Route exact path="/projects" render={() => <Projects setCommuFirstContsIsActive={setCommuFirstContsIsActive} commuFirstContsIsActive={commuFirstContsIsActive}/>}></Route>
       <Route exact path="/experiences" component={Experiences}></Route>
-      <Route exact path="/skills" component={Skills}></Route>
+      <Route exact path="/interests" component={Interests}></Route>
       <Route exact path="/youtube" component={Youtube}></Route>
       <Route exact path="/mymap" component={Mymap}></Route>
       <Route exact path="/cv" component={Cv}></Route>
