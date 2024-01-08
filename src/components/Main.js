@@ -7,6 +7,12 @@ import { useEffect } from 'react';
 const Main = () => {
   const projectsData = [
     {
+      projectName: 'Virtual Game Store',
+      briefInfo:
+      'The multiplatform app is a one-stop shop for gamers, offering game and merchandise purchases, event enrollments, and review writing. Users can add friends and family. It includes an admin panel for managing orders, CRUD for games, merchandise, events, approving reviews, and generating sales reports.',
+      gitLink: 'https://github.com/junseo-yang/virtual-game-store',
+    },
+    {
       projectName: 'Mini Games',
       briefInfo:
       'This is a mini-game application that allows you to enjoy various simple games. I created it because I love games and want to study Kotlin in-depth.',
