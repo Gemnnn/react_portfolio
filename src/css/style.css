@@ -193,6 +193,11 @@ header .logo span {
   color: #4a6869;
 }
 
+header .logo-color:hover {
+  color: orange;
+  transition: color 0.5s;
+}
+
 header .web {
   position: relative;
   width: 100%;
@@ -354,6 +359,11 @@ footer .logo span {
   font-family: "Poppins", sans-serif;
 }
 
+footer .logo-color:hover {
+  color: orange;
+  transition: 0.5s;
+}
+
 footer .inner {
   display: flex;
   flex-wrap: wrap;
@@ -411,15 +421,15 @@ footer .nav h2 {
   line-height: 1;
 }
 
-footer .nav .list li {
+footer .nav .list a {
   margin-bottom: 23px;
   font-size: 18px;
-  color: #56565c;
+  color: white;
   transition: all 0.5s;
 }
 
-footer .nav .list li:hover {
-  color: rgb(43, 174, 41);
+footer .nav .list a:hover {
+  color: orange;
 }
 
 footer .contactMe {

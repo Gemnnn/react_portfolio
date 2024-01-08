@@ -31,6 +31,11 @@ header .logo span {
 	color: #4a6869;
 }
 
+header .logo-color:hover{
+	color: orange;
+	transition: color 0.5s;
+}
+
 header .web {
 	position: relative;
 	width: 100%;

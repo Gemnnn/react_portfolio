@@ -22,6 +22,7 @@ function Header() {
       setNavVisibility(false); // Close navigation after clicking on a link
     }
   };
+  
 
   return (
     <header>
@@ -35,10 +36,11 @@ function Header() {
       />
       <div className="inner">
         <h1 className="logo">
-          <NavLink exact to="/portfolio">
+          <NavLink exact to="/portfolio" className="logo-color">
             Branden Min
           </NavLink>
         </h1>
+
         {/* <div className='nav'> */}
           <div className={`mobile-menu ${isNavVisible ? 'open' : ''}`}>
             <span className="toggle-button" onClick={toggleNav}>
