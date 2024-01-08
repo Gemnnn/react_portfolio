@@ -19,8 +19,8 @@
 .project-box {
     text-align: center;
     border: 2px solid white;
-    border-radius: 10px;
-    width: 300px;
+    // border-radius: 10px;
+    width: 500px;
     padding: 20px; /* Add padding for better spacing */
     background-color: #0a0a0a; /* Add a background color */
     color: white; /* Set text color */
@@ -29,19 +29,21 @@
 }
 
 .project-box:hover {
-    border: 3px solid yellowgreen;
+    border: 3px solid orange;
     color: black; /* Change text color on hover */
     transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease; /* Add transitions */
 }
 
 .projects h3 {
     background-color: #0a0a0a;
+    font-size: 170%;
 }
 
 .projects p{
     background-color: #0a0a0a;
     font-family: 'Poppins', sans-serif;
-    font-weight: 100;
+    color: white;
+    font-weight: 250;
 }
 
 .projects a{
