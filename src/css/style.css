@@ -57,37 +57,6 @@ a {
   display: inline-block;
 }
 
-.animated-text {
-  opacity: 0;
-  animation: complexAnimation 4s ease-in-out infinite alternate;
-}
-
-@keyframes complexAnimation {
-  0% {
-    opacity: 1;
-    color: #3498db;
-  }
-  20% {
-    opacity: 1;
-    color: #e74c3c;
-  }
-  40% {
-    opacity: 1;
-    color: #2ecc71;
-  }
-  60% {
-    opacity: 1;
-    color: #f39c12;
-  }
-  80% {
-    opacity: 1;
-    color: #3498db;
-  }
-  100% {
-    opacity: 1;
-    color: #1abc9c;
-  }
-}
 h1 {
   margin: 0;
   font-family: "orpheus-pro", sans-serif;
@@ -95,13 +64,29 @@ h1 {
   transition: color 0.5s;
 }
 
+.animated-fadein {
+  animation: fadeIn infinite;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .body.isScroll {
   overflow: hidden;
 }
 
 .body {
   font-family: "orpheus-pro", sans-serif;
-  height: 3200px;
+  height: 3900px;
 }
 
 .headline {
@@ -127,23 +112,29 @@ h1 {
 }
 
 .body2 {
+  padding: 20px;
   position: relative;
   left: 70%;
   top: 200px;
   transform: translateX(-50%);
   width: 400px;
   font-size: 150%;
+  color: white;
 }
 
 .body2 p {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
+  font-family: "roboto", sans-serif;
+  font-weight: 200;
+}
+
+.body2 h3 {
+  font-size: 150%;
 }
 
 @media (max-width: 768px) {
   .body {
     font-family: "orpheus-pro", sans-serif;
-    height: 4200px;
+    height: 4500px;
   }
   .mainbody {
     padding-bottom: 0;
@@ -236,7 +227,7 @@ header .web a {
 }
 
 header .web a:hover {
-  color: rgb(203, 195, 40);
+  color: orange;
 }
 
 header .snsContact {
@@ -252,8 +243,8 @@ header .snsContact a {
 }
 
 header .snsContact a:hover {
-  color: #4caf50;
-  background-color: #4caf50;
+  color: orange;
+  background-color: orange;
   font-size: 38px;
 }
 
@@ -483,35 +474,36 @@ footer .copy {
 
 .experiences h3 {
   text-align: left;
-  background-color: 0a0a0a;
+  background-color: #0a0a0a;
   color: white;
-  font-size: 130%;
+  font-size: 170%;
 }
 
 .experiences h4 {
   text-align: left;
-  background-color: 0a0a0a;
+  background-color: #0a0a0a;
   color: white;
-  font-size: 120%;
+  font-size: 140%;
 }
 
 .experiences h5 {
   text-align: left;
-  background-color: 0a0a0a;
+  background-color: #0a0a0a;
   color: white;
   white-space: pre-line;
-  font-size: 120%;
+  font-size: 130%;
 }
 
 .ex-info {
   font-family: "Poppins", sans-serif;
-  font-weight: 100;
+  color: white;
+  font-weight: 200;
 }
 
 .experience-container {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: 0a0a0a;
+  background-color: #0a0a0a;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -522,19 +514,18 @@ footer .copy {
 
 .experience-box {
   text-align: center;
-  border: 0 0 0 2px solid 0a0a0a;
-  border-radius: 10px;
+  border: 2px solid white;
   width: 800px;
   padding: 20px; /* Add padding for better spacing */
-  background-color: 0a0a0a; /* Add a background color */
-  color: 0a0a0a; /* Set text color */
+  background-color: #0a0a0a; /* Add a background color */
+  color: white; /* Set text color */
   box-shadow: 0 0 10px rgb(255, 255, 255); /* Add a subtle box shadow */
   transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease; /* Add transitions */
 }
 
 .experience-box:hover {
-  border: 3px solid yellowgreen;
-  color: 0a0a0a; /* Change text color on hover */
+  border: 3px solid orange;
+  color: black; /* Change text color on hover */
   transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease; /* Add transitions */
 }
 
@@ -559,8 +550,7 @@ footer .copy {
 .project-box {
   text-align: center;
   border: 2px solid white;
-  border-radius: 10px;
-  width: 300px;
+  width: 500px;
   padding: 20px; /* Add padding for better spacing */
   background-color: #0a0a0a; /* Add a background color */
   color: white; /* Set text color */
@@ -569,19 +559,21 @@ footer .copy {
 }
 
 .project-box:hover {
-  border: 3px solid yellowgreen;
+  border: 3px solid orange;
   color: black; /* Change text color on hover */
   transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease; /* Add transitions */
 }
 
 .projects h3 {
   background-color: #0a0a0a;
+  font-size: 170%;
 }
 
 .projects p {
   background-color: #0a0a0a;
   font-family: "Poppins", sans-serif;
-  font-weight: 100;
+  color: white;
+  font-weight: 250;
 }
 
 .projects a {

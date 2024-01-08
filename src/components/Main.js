@@ -55,10 +55,20 @@ const Main = () => {
     }
   ];
 
+  const AnimatedText = ({ text }) => {
+    const letters = text.split('').map((letter, index) => (
+      <span key={index} className="animated-fadein" style={{ animationDelay: `${index * 0.1}s` }}>
+        {letter}
+      </span>
+    ));
+  
+    return <h1>{letters}</h1>;
+  };
+  
+
   // const sendEmail = (sectionId) => {
   //   const section = document.getElementById(sectionId);
   // }
-
 
   return (
     <div className='body'>
@@ -69,12 +79,16 @@ const Main = () => {
             <h1>& Coffee Enthusiast.</h1>
           </div>
         </div> */}
+        {/*  */}
         <div className='container'>
           <div className='headline'>
-            <h1 className='animated-text'>Junior Developer</h1>
-            <h1 className='animated-text'>& Coffee Enthusiast.</h1>
+            {/* <h1 className='animated-text'>Junior Developer</h1>
+            <h1 className='animated-text'>& Coffee Enthusiast.</h1> */}
+              <AnimatedText text="Junior Developer" />
+              <AnimatedText text="& Coffee Enthusiast." />
           </div>
         </div>
+        {/*  */}
         <div className='mainbody'>
           <div className="body1">
             <img src={myPhoto1} alt="My Image" />
@@ -83,7 +97,8 @@ const Main = () => {
             <h3>"Committed Developer with a Vision for Leadership and Continuous Growth"</h3>
             <p>&nbsp;</p>
             <p>
-              I'm a dedicated Junior developer with an unwavering commitment to realizing my goal of becoming a creative leader in the field. I believe hard work and a passion for innovation are the cornerstones of success. I am ready to put my efforts into my new journey that showcases my relentless pursuit of excellence, not just in development but also in exploring the boundless possibilities that an open-minded approach to technology and creativity can offer.
+              I'm a dedicated Junior developer with an unwavering commitment to realizing my goal of becoming a creative leader in the field. 
+              <br /><br />I believe hard work and a passion for innovation are the cornerstones of success. <br /><br />I am ready to put my efforts into my new journey that showcases my relentless pursuit of excellence, not just in development but also in exploring the boundless possibilities that an open-minded approach to technology and creativity can offer.
             </p>
           </div>
         </div>
