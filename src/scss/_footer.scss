@@ -104,3 +104,37 @@ footer .copy {
 	text-align: center;
 	color: #78787d;
   }
+
+@media (max-width: 768px) {
+	.nav {
+	  display: none;
+	  visibility: hidden;
+	}
+
+	.contactMe{
+		display: none;
+		visibility: hidden;	
+	}
+
+	footer {
+		width: 768px;
+		overflow: hidden;
+	}
+}
+
+@media (max-width:480px) {
+	.nav {
+		display: none;
+		visibility: hidden;
+	}
+
+	.contactMe{
+		display: none;
+		visibility: hidden;	
+	}
+
+	footer {
+		width: 480px;
+		overflow: hidden;
+	}
+}

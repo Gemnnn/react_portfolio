@@ -131,10 +131,16 @@ h1 {
   font-size: 150%;
 }
 
+@media (max-width: 1019px) {
+  .body {
+    font-family: "orpheus-pro", sans-serif;
+    height: 4300px;
+  }
+}
 @media (max-width: 768px) {
   .body {
     font-family: "orpheus-pro", sans-serif;
-    height: 4500px;
+    height: 4700px;
   }
   .mainbody {
     padding-bottom: 0;
@@ -154,6 +160,24 @@ h1 {
     width: 80%;
     font-size: 100%;
     margin: 0;
+  }
+}
+@media (max-width: 630px) {
+  .body {
+    font-family: "orpheus-pro", sans-serif;
+    height: 5100px;
+  }
+}
+@media (max-width: 530px) {
+  .body {
+    font-family: "orpheus-pro", sans-serif;
+    height: 5300px;
+  }
+}
+@media (max-width: 480px) {
+  .body {
+    font-family: "orpheus-pro", sans-serif;
+    height: 5500px;
   }
 }
 .myPhoto1 {
@@ -466,6 +490,34 @@ footer .copy {
   color: #78787d;
 }
 
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    visibility: hidden;
+  }
+  .contactMe {
+    display: none;
+    visibility: hidden;
+  }
+  footer {
+    width: 768px;
+    overflow: hidden;
+  }
+}
+@media (max-width: 480px) {
+  .nav {
+    display: none;
+    visibility: hidden;
+  }
+  .contactMe {
+    display: none;
+    visibility: hidden;
+  }
+  footer {
+    width: 480px;
+    overflow: hidden;
+  }
+}
 .contact {
   margin-top: 50px;
 }
@@ -601,6 +653,27 @@ footer .copy {
     margin-top: 300px;
   }
 }
-.skills {
+.interests {
+  text-align: center;
   margin-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.interests h2 {
+  font-size: 300%;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Adjust the gap as needed */
+  margin-top: 20px; /* Adjust the top margin as needed */
+  width: auto;
+}
+
+.image-box {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

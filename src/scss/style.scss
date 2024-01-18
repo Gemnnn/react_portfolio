@@ -154,10 +154,17 @@ h1 {
   font-size: 150%;
 }
 
+@media (max-width:1019px) {
+  .body {
+    font-family: 'orpheus-pro', sans-serif;
+    height: 4300px;
+  }
+}
+
 @media (max-width: 768px) {
   .body {
     font-family: 'orpheus-pro', sans-serif;
-    height: 4500px;
+    height: 4700px;
   }
 
   .mainbody {
@@ -185,6 +192,28 @@ h1 {
   }
 }
 
+@media (max-width:630px) {
+  .body {
+    font-family: 'orpheus-pro', sans-serif;
+    height: 5100px;
+  }
+}
+
+@media (max-width:530px) {
+  .body {
+    font-family: 'orpheus-pro', sans-serif;
+    height: 5300px;
+  }
+}
+
+@media (max-width:480px) {
+  .body {
+    font-family: 'orpheus-pro', sans-serif;
+    height: 5500px;
+  }
+}
+
+
 
 .myPhoto1 {
   background-image: url(../images/photo1.png);
@@ -199,5 +228,5 @@ h1 {
 @import "experiences";
 @import "mymap";
 @import "projects";
-@import "skills";
+@import "interests";
 @import "youtube";
