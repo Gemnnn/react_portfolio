@@ -22,8 +22,8 @@ function Header() {
       setNavVisibility(false); // Close navigation after clicking on a link
     }
   };
-  
 
+  
   return (
     <header>
       <meta
@@ -51,7 +51,7 @@ function Header() {
               <a><NavLink onClick={() => scrollToSection("projects")} to="/portfolio#projects">PROJECTS</NavLink></a>
               <a><NavLink onClick={() => scrollToSection("experiences")} to="/portfolio#experiences">EXPERIENCES</NavLink></a>
               <a><NavLink onClick={() => scrollToSection("interests")} to="/portfolio#interests">INTERESTS</NavLink></a>
-              <a><NavLink onClick={() => window.open('/portfolio/BrandenMin.pdf.pdf', '_black')} to="portfolio/#cv">CV</NavLink></a>
+              <a><NavLink onClick={() => window.open('/portfolio/BrandenMin.pdf', '_black')} to="portfolio/#cv">CV</NavLink></a>
             </ul>
           </div>
           <div className='pc-menu'>

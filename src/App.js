@@ -18,7 +18,6 @@ import Contact from './components/Contact';
 function App() {
 
   const [commuFirstContsIsActive, setCommuFirstContsIsActive] = useState(null);
-  const [menuMobile,setMenuMobile] = useState('');
 
   return (
     <div className="App">

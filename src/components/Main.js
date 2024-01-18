@@ -2,7 +2,16 @@ import React from 'react';
 import myPhoto1 from '../images/photo1.png';
 import Projects from './Projects';
 import Experiences from './Experiences';
-import { useEffect } from 'react';
+
+//
+import Csharp from '../images/CSharp.svg';
+import Kotlin from '../images/kotlin.svg';
+import JS from '../images/JS.svg';
+import Java from '../images/Java.svg';
+import Delphi from '../images/Delphi.png';
+import react from '../images/React.png';
+
+import Interests from './Interests';
 
 const Main = () => {
   const projectsData = [
@@ -52,6 +61,33 @@ const Main = () => {
       date: 'Jun 2021 - Current', 
       location: "Toronto & Waterloo", 
       job: '• Created the best Starbucks experience by connecting with customers and contributing to store and company operations through best-in-class customer service. \n • Grew Customer Connection score from 29 to 48'
+    }
+  ];
+
+  const imageData = [
+    {
+      image: Csharp,
+      name: "C Sharp"
+    },
+    {
+      image: Kotlin,
+      name: "Kotlin"
+    },
+    {
+      image: Delphi,
+      name: "Delphi"
+    },
+    {
+      image: JS,
+      name: "JavaScript"
+    },
+    {
+      image: react,
+      name: "React"
+    },
+    {
+      image: Java,
+      name: "Java"
     }
   ];
 
@@ -120,9 +156,14 @@ const Main = () => {
         </div>
         <div className='interests' id='interests'>
             <h2>Interests</h2>
+            <div className='image-container'>
+              {imageData.map((project, index) => (
+               <Interests key={index} {...project} /> 
+              ))}
+            </div>
         </div>
         <div className='contact' id='contact'>
-            <h2>Contact</h2>
+            {/* <h2>Contact</h2> */}
             {/* <div className='message-input'>
               <input
                 type='tel'
