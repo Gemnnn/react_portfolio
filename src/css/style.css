@@ -50,7 +50,10 @@ a {
 
 .container {
   text-align: center;
-  padding: 50px;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-left: 0;
 }
 
 .headline {
@@ -93,7 +96,7 @@ h1 {
   text-align: center;
   margin-top: 70px;
   margin-bottom: 100px;
-  font-size: 200%;
+  font-size: 180%;
 }
 
 .main {
@@ -131,10 +134,10 @@ h1 {
   font-size: 150%;
 }
 
-@media (max-width: 1019px) {
+@media (max-width: 1037px) {
   .body {
     font-family: "orpheus-pro", sans-serif;
-    height: 4300px;
+    height: 4400px;
   }
 }
 @media (max-width: 768px) {
@@ -162,6 +165,12 @@ h1 {
     margin: 0;
   }
 }
+@media (max-width: 713px) {
+  .body {
+    font-family: "orpheus-pro", sans-serif;
+    height: 4900px;
+  }
+}
 @media (max-width: 630px) {
   .body {
     font-family: "orpheus-pro", sans-serif;
@@ -178,6 +187,36 @@ h1 {
   .body {
     font-family: "orpheus-pro", sans-serif;
     height: 5500px;
+  }
+}
+@media (max-width: 439px) {
+  .body {
+    font-family: "orpheus-pro", sans-serif;
+    height: 5700px;
+  }
+}
+@media (max-width: 425px) {
+  .body {
+    font-family: "orpheus-pro", sans-serif;
+    height: 6000px;
+  }
+}
+@media (max-width: 379px) {
+  .body {
+    font-family: "orpheus-pro", sans-serif;
+    height: 6400px;
+  }
+}
+@media (max-width: 355px) {
+  .body {
+    font-family: "orpheus-pro", sans-serif;
+    height: 6700px;
+  }
+}
+@media (max-width: 330px) {
+  .body {
+    font-family: "orpheus-pro", sans-serif;
+    height: 7500px;
   }
 }
 .myPhoto1 {

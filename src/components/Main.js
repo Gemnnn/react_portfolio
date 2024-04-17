@@ -16,6 +16,12 @@ import Interests from './Interests';
 const Main = () => {
   const projectsData = [
     {
+      projectName: 'Initiate News',
+      briefInfo:
+      'Initiate News condenses daily news into brief summaries, based on the keyword the user registered and location, providing key points on recent events. Plus, it will be able to engage with a community of like-minded individuals by sharing keywords and stories.',
+      gitLink: 'https://github.com/Gemnnn/Initiate-News',
+    },
+    {
       projectName: 'Virtual Game Store',
       briefInfo:
       'The multiplatform app is a one-stop shop for gamers, offering game and merchandise purchases, event enrollments, and review writing. Users can add friends and family. It includes an admin panel for managing orders, CRUD for games, merchandise, events, approving reviews, and generating sales reports.',
@@ -93,7 +99,7 @@ const Main = () => {
 
   const AnimatedText = ({ text }) => {
     const letters = text.split('').map((letter, index) => (
-      <span key={index} className="animated-fadein" style={{ animationDelay: `${index * 0.1}s` }}>
+      <span key={index} className="animated-fadein" style={{ animationDelay: `${index * 0.07}s` }}>
         {letter}
       </span>
     ));
@@ -120,8 +126,8 @@ const Main = () => {
           <div className='headline'>
             {/* <h1 className='animated-text'>Junior Developer</h1>
             <h1 className='animated-text'>& Coffee Enthusiast.</h1> */}
-              <AnimatedText text="Junior Developer" />
-              <AnimatedText text="& Coffee Enthusiast." />
+              <AnimatedText text="Junior Developer " />
+              <AnimatedText text="& Coffee Enthusiast. " />
           </div>
         </div>
         {/*  */}
